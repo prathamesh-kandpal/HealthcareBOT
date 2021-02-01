@@ -13,11 +13,10 @@ Important Packages Used :
 -json
 -pickle
 
-More Intents(in the json file) can be added if needed 
+More Intents(in the json file) can be added if needed. Below is the algorithm:
 
-Algorithm : 
 
-https://github.com/prathamesh-kandpal/HealthcareBOT/blob/main/Algorithm.PNG
+![Algorithm.PNG](https://github.com/prathamesh-kandpal/HealthcareBOT/blob/main/Algorithm.PNG)
 
 Final Result : 
 ![Chatbot_img1.jpeg](https://github.com/prathamesh-kandpal/HealthcareBOT/blob/main/Chatbot_img1.jpeg)
