@@ -6,11 +6,17 @@ List of Diseases Covered :
 
 Important Packages Used :
 -nltk
+
 -numpy
+
 -tflearn
+
 -tensorflow
+
 -random
+
 -json
+
 -pickle
 
 More Intents(in the json file) can be added if needed. Below is the algorithm:
