@@ -1,4 +1,4 @@
-This Is a HealthCare Chatbot, an interactive conversational chatbot 
+# HealthCare Chatbot using Deep Learning
 
 List of Diseases Covered :
 
