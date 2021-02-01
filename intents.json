@@ -1,0 +1,198 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+         "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Nice"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure","Thank You too!"]
+        },
+        {"tag": "name",
+         "patterns": ["what is your name", "what should I call you", "whats your name?"],
+         "responses": ["My name is Healthcare Chatbot.", "I'm Healthcare Chatbot", "Hello, you can call me HealthCB a.k.a Healthcare Chatbot"],
+         "context_set": ""
+        },
+        {"tag": "purpose",
+         "patterns": ["so what do you do?", "what can you do", "how can you assist me", "what is your purpose"],
+         "responses": ["Hi I am an AI driven Healthcare Chatbot, I would be pleased to assist you on basic healthcare related diagnosis"],
+         "context_set": ""
+        },
+        {"tag": "Assistance",
+         "patterns": ["I am having a problem", "I am not feeling well", "my health is not good", "I need your help please", "can you please help me", "I am having a serious medical condition", "I am going through some illness please help me"],
+         "responses": ["Hey! no need to panic I am always here for you can you please elaborate all the symptoms you are facing", "Please tell me what problems you are facing.", "What all symptoms you are facing."],
+         "context_set": ""
+        },
+        {"tag": "pain-sequence1",
+         "patterns": ["I am having Muscle Tenderness","My muscles feel weak","pain in my hands","pain in my legs","pain in the abdominal region", "ache","body-ache", "my body is aching","neck pain"],
+         "responses": ["It is possible that you might be having pain in your body, this kind of dieases is syndromic in nature.\nPain can occur due to several reasons but it usually occurs due to sudden damage. For more information related to treatment and cure visit https://www.webmd.com/pain-management/guide/pain-management-treatment-care.\nIf the pain is serious then do visit your doctor"],
+         "context_set": ""
+        },
+        {"tag": "headache-sequence1",
+         "patterns": ["I am having a serious headache","I am having headache for past many hours","","headache","suggest me some home remedies to cure headache"],
+         "responses": ["This kind of dieases is syndromic in nature.\nHeadache usually occurs due to Stress, Lack of sleep, hunger and many more reasons. For more information related to treatment and cure visit https://www.webmd.com/migraines-headaches/guide/migraines-headaches-treatment-care.\nIf the pain is serious then do visit your doctor"],
+         "context_set": ""
+        },
+        {"tag": "fever-sequence1",
+         "patterns": ["Following are some of the symptoms I am facing : Sweating Chills, shivering, Headache, Muscle aches, Loss of appetite, Dehydration, General weakness", "I am facing Sweating Chills, shivering, Headache, Muscle aches, Loss of appetite, Dehydration, General weakness", "My body temperature is high", "High body temperature","High temperature"],
+         "responses": ["This kind of dieases is syndromic in nature.\nFever usually occurs due to Virus contraction, bacterial infection, heat exhaustion and many more reasons. For more information related to treatment and cure visit https://www.webmd.com/first-aid/fevers-causes-symptoms-treatments#1\nIf the fever is serious then do visit your doctor"],
+         "context_set": ""
+        },
+        {"tag": "cough-sequence1",
+         "patterns": ["I am having sore throat and runny nose", "How to cure common cold"],
+         "responses": ["You are facing Cough, this kind of dieases is syndromic in nature.\nCough usually occurs due to Virus contraction, common cold and many more reasons. For more information related to treatment and cure visit https://www.webmd.com/cold-and-flu/default.htm\nIf the cough is serious then do visit your doctor"],
+         "context_set": ""
+        },
+        {"tag": "Convulsions-sequence1",
+        "patterns": ["I am having uncontrolled muscle spasms along with altered consciousness", "My breathing isn't normal also I am facing jerky movement of body parts", "I am losing consciousness, eyes rolling back in the head, stiffening of the arms and legs, inability to respond, jerky movements of the arms, legs and sometimes the whole body"],
+        "responses": ["Based on the informantion provided by you it is possible that you are having convulsion.\nConvulsion usually occurs due rise in temperature and another cause is Epilepsy which a chronic neurological condition, is a known cause of convulsion. It involves recurring seizures that are not caused by another known condition. For more information visit https://healthtian.com/convulsion/.\nIf the condition is serious then do visit your doctor"],
+        "context_set": ""
+        },
+        {"tag": "Shock-sequence1",
+        "patterns": ["I am facing symptoms like Rapid Pulses, fast breathing, dizziness, fainting, low blood pressure"],
+        "responses": ["symptoms listed by you are related to shock.\nShock usually occurs due Heart conditions, heavy internal or extrenal bleeding, dehydration, burns, persistent vomiting or diarrhea, spinal inguries and severe allergic reactions. For more information visit https://www.medicinenet.com/shock/article.htm.\nIf the condition is serious then do visit your doctor"],
+        "context_set": ""
+        },
+        {"tag": "dehydration_kids-sequence1",
+        "patterns": ["I am having dry mouth and touge, no tears while crying, sunken eyes and cheeks and irritablilty"],
+        "responses": ["symptoms listed by you are related to dehydration in kids.\nDehydration usually occurs due fever, excessive sweating, increased urination, diarrhea and vomiting. For more information visit https://www.mayoclinic.org/diseases-conditions/dehydration/symptoms-causes/syc-20354086.\nIf the condition is serious then do visit your doctor"],
+        "context_set": ""
+        },
+        {"tag": "dehydration_adults-sequence1",
+        "patterns": ["I am having extreme thirst, less urination, dark colored urine, fatigue, dizziness and sometimes confusion"],
+        "responses": ["symptoms listed by you are related to dehydration in adults.\nDehydration usually occurs due fever, excessive sweating, increased urination, diarrhea and vomiting. For more information visit https://www.mayoclinic.org/diseases-conditions/dehydration/symptoms-causes/syc-20354086.\nIf the condition is serious then do visit your doctor"],
+        "context_set": ""
+        },
+        {"tag": "hypoglycemia-sequence1",
+        "patterns": ["I am having fatigue, anxiety, pale skin, hunger and sweating", "I am having symptoms like anxiety, fatigue, hunger, pale skin and sweating"],
+        "responses": ["symptoms listed by you are related to hypoglycemia.\nHypoglycemia can occur either due to regular alcohol consumption or unregulated blood sugar level. For more information visit https://www.mayoclinic.org/diseases-conditions/hypoglycemia/symptoms-causes/syc-20373685.\nIf the condition is serious then do visit your doctor"],
+        "context_set": ""
+        },
+        {"tag": "Periodontal-sequence1",
+        "patterns": ["I am having symptoms like bleeding gums", "bleeding gums"],
+        "responses": ["Did you also loose any tooth or are any of your teeths feel weak"],
+        "context_set": ["periodontal"]
+        },
+        {"tag": "Periodontal-sequence2",
+        "patterns": ["yaa maybe I am not sure", "yes", "yaa", "I have lost a tooth and I am also having bleeding gums", "fallen teeth bleeding gums"],
+        "responses": ["The symptoms you are facing are related to Periodontal conditions, This happens due to Poor Brushing and Flossing Habits.\nFor more information visit https://www.mayoclinic.org/diseases-conditions/periodontitis/symptoms-causes/syc-20354473.\nIf the condition is serious then do visit your doctor"],
+        "context_set": ["periodontal"]
+        },
+        {"tag": "dental_caries-sequence1",
+        "patterns": ["I am having toothache", "My teeths are aching", "My tooth is aching", "I feel pain in my teeths while eating food"],
+        "responses": ["Do you also have any mouth infections"],
+        "context_set": ["dental_caries"]
+        },
+        {"tag": "dental_caries-sequence2",
+        "patterns": ["yaa", "yes I do have mouth infections", "Maybe I am not sure", "yes I do have toothache", "My teeths are aching and I also have a mouth infection"],
+        "responses": ["The symptoms you are facing are related to Dental Caries, This happens due to poor tooth care.\nFor more information visit https://www.drugs.com/cg/dental-caries.html.\nIf the condition is serious then do visit your doctor"],
+        "context_set": ["dental_caries"]
+        },
+        {"tag": "APHTHOUS_ULCERATION-sequence1",
+        "patterns": ["I am having a painful sore", "I am having painful sore inside my mouth"],
+        "responses": ["Do you also feel difficult to eat and talk at times", "Is chewing food difficultfor you?"],
+        "context_set": ["APHTHOUS"]
+        },
+        {"tag": "APHTHOUS_ULCERATION-sequence2",
+        "responses": ["The disease you are facing is commonly kown as aphthous ulcer.\nUlcers are caused due to Emotional stress, lack of sleep, self inflicted bite, nutritional deficiency, and toothpastes with high sodium laureth sulfate. For more information visit https://www.dermnetnz.org/topics/aphthous-ulcer.\nIf the condition is serious then do visit your doctor"],
+        "patterns": ["yes", "yes sometimes", "yes i feel pain while chewing my food", "I am having symptoms like painful sore and I find it hard while chewing my food and diffuclt to talk"],
+        "context_set": ["APHTHOUS"]
+        },
+        {"tag": "infection_gastro-sequence1",
+        "patterns": ["I am having high fever", "High fever"],
+        "responses": ["Did you face any of the following symptoms as well : Vomiting"],
+        "context_set": ["gastro_infection"]
+        },
+        {"tag": "infection_gastro-sequence2",
+        "patterns": ["yes", "yaa I have also experienced vomiting", " I am having symptoms like high fever and vomiting"],
+        "responses": ["You are having infection in gastrointestinal tract.\nThis is usually caused due to contractions with viruses, bacteria or parasites. For more information visit https://www.healthline.com/health/gastrointestinal-infection#when-to-go-to-the-doctor.\nIf the condition is serious then do visit your doctor"],
+        "context_set": ["gastro_infection"]
+        },
+        {"tag": "ari-sequence1",
+        "patterns": ["My symptoms include pain in chest and I also experience coughing", "I am having pain in my chest", "chest-pain cough"],
+        "responses": ["Do you also have any of the following symptoms as well : cough, tightness in chest, sore throat"],
+        "context_set": ["ARI"]
+        },
+        {"tag": "ari-sequence2",
+        "patterns": ["yes", "yaa", "Yes I face all these symptoms", "Yes I feel some of them"],
+        "responses": ["You are facing acute respiratory infections.\nThis is usually caused due to Virus and bacteria infections. For more information on cure & treatment visit https://www.healthline.com/health/acute-respiratory-disease.\nIf the condition is serious then do visit your doctor"],
+        "context_set": ["ARI"]
+        },
+        {"tag": "respiratory_distress-sequence1",
+        "patterns": ["I am having facing shallow breathing", "I am having facing grunting sounds", "I am having facing low blood pressure", "I am having facing confusion", "I am having facing extreme tiredness"],
+        "responses": ["Do you also face any of the following symptoms as well: shallow breathing, grunting sounds, low blood pressure, confusion, extreme tiredness"],
+        "context_set": ["resp"]
+        },
+        {"tag": "respiratory_distress-sequence2",
+        "patterns": ["yaa", "yes", "Yes I do face some of these symptoms", "I face symptoms like shallow breathing, grunting sounds, low blood pressure, confusion, extreme tiredness"],
+        "responses": ["This condition is known as Acute Respiratory Distress Syndrome.\nARDS is caused due to Smoking, blood infection, injury to chest or head. For more information visit : https://www.mayoclinic.org/diseases-conditions/ards/symptoms-causes/syc-20355576.\nIf the condition is serious then do visit your doctor"],
+        "context_set": ["resp"]
+        },
+        {"tag": "hypertension-sequence1",
+        "patterns": ["I am having facing symptoms headache", "I am having facing symptoms chest pain", "I am having facing symptoms vision problem weak vision", "I am having facing symptoms like headache, chest pain and vision problem"],
+        "responses": ["Do you also face any of these symptoms as well : Headache, Chest Pain, Vision Problem"],
+        "context_set": ["hypten"]
+        },
+        {"tag": "hypertension-sequence2",
+        "patterns": ["yes", "yaa", "Yes I do feel some of these symptoms", "yes yaa I already listed mentioned all these symptoms"],
+        "responses": ["You are having Hypertension and this usually occurs due to diabetes or kidney related diseases. For more information related to this cause, symptoms and treatment visit https://www.mayoclinic.org/diseases-conditions/high-blood-pressure/symptoms-causes/syc-20373410.\nIf the condition is serious then do visit your doctor"],
+        "context_set": ["hypten"]
+        },
+        {"tag": "otitis-sequence1",
+        "patterns": ["I am having facing symptoms pain in ear", "I am having facing symptoms ear pain", "I am having facing symptoms itching on my ear", "I am having facing symptoms redness on my ear", "I am having facing symptoms pain near ear, itching and redness around ear canal"],
+        "responses": ["Do you also face any of the following symptoms as well : Ear Pain, Itching & Redness around Ear canal"],
+        "context_set": ["oti"]
+        },
+        {"tag": "otitis-sequence2",
+        "patterns": ["yaa", "yes", "Yes I already listed all these symptoms"],
+        "responses": ["You are facing Otitis and this is usually caused due to Bacetial, fungal or viral infection.\nFor more information visit https://www.healthline.com/health/otitis. If the condition is serious then do visit your doctor"],
+        "context_set": ["oti"]
+        },
+        {"tag": "vitamin_b1-sequence1",
+        "patterns": ["I am having Blurry Vision, Loss of Appetite, Weakness"],
+        "responses": ["It is possible that you are having Vitamin B1 Deficiency. For more information regarding this disease visit https://selfhacked.com/blog/thiamine-deficiency/.\nIf the condition is serious then do visit your doctor"],
+        "context_set": ""
+        },
+        {"tag": "vitamin_b2-sequence1",
+        "patterns": ["I am having Throat Swelling, Swolen Tongue, Weakness"],
+        "responses": ["It is possible that you are having Vitamin B2 Deficiency. For more information regarding this disease visit https://www.doctorshealthpress.com/food-and-nutrition-articles/vitamin-b2-deficiency-symptoms-benefits/.\nIf the condition is serious then do visit your doctor"],
+        "context_set": ""
+        },
+        {"tag": "vitamin_b3-sequence1",
+        "patterns": ["I am having Headache, Depression, Vomiting, Diarrrhea"],
+        "responses": ["It is possible that you are having Vitamin B3 Deficiency. For more information regarding this disease visit https://www.medicalnewstoday.com/articles/319429.\nIf the condition is serious then do visit your doctor"],
+        "context_set": ""
+        },
+        {"tag": "vitamin_b6-sequence1",
+        "patterns": ["I am having Skin Rashes, Sore Lips & Tongue, Low Energy"],
+        "responses": ["It is possible that you are having Vitamin B6 Deficiency. For more information regarding this disease visit https://ods.od.nih.gov/factsheets/VitaminB6-HealthProfessional/.\nIf the condition is serious then do visit your doctor"],
+        "context_set": ""
+        },
+        {"tag": "vitamin_c-sequence1",
+        "patterns": ["I am having Swelling, Bone Pain, Depression, Red Spots on Skin"],
+        "responses": ["It is possible that you are having Vitamin C Deficiency. For more information regarding this disease visit https://draxe.com/nutrition/vitamin-c-deficiency-symptoms/.\nIf the condition is serious then do visit your doctor"],
+        "context_set": ""
+        },
+        {"tag": "vitamin_d-sequence1",
+        "patterns": ["I am having Bone & Back Pain, Hair Loss, Depression"],
+        "responses": ["It is possible that you are having Vitamin D Deficiency. For more information regarding this disease visit https://www.webmd.com/diet/guide/vitamin-d-deficiency#1.\nIf the condition is serious then do visit your doctor"],
+        "context_set": ""
+        },
+        {"tag": "vitamin_e-sequence1",
+        "patterns": ["I am having Muscle Weakness, Vision Problem"],
+        "responses": ["It is possible that you are having Vitamin E Deficiency. For more information regarding this disease visit https://www.healthline.com/health/food-nutrition/vitamin-e-deficiency.\nIf the condition is serious then do visit your doctor"],
+        "context_set": ""
+        },
+        {"tag": "vitamin_k-sequence1",
+        "patterns": ["i am Oozing from Nose or Gums, Bleeding From GI Tract"],
+        "responses": ["It is possible that you are having Vitamin K Deficiency. For more information regarding this disease visit https://www.healthline.com/health/vitamin-k-deficiency.\nIf the condition is serious then do visit your doctor"],
+        "context_set": ""
+        },
+        {"tag": "Good Bye",
+         "patterns": ["Okay see you later", "Bye", "Good Bye"],
+         "responses": ["Bye, I hope to see you soon!", "Good Bye, I hope I was helpful", "Bye"],
+         "context_set": ""
+        }
+
+   ]
+}
