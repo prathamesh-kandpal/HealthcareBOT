@@ -192,7 +192,33 @@
          "patterns": ["Okay see you later", "Bye", "Good Bye"],
          "responses": ["Bye, I hope to see you soon!", "Good Bye, I hope I was helpful", "Bye"],
          "context_set": ""
-        }
+        },
+        {"tag": "sepsis_1",
+         "patterns": ["fever", "increased heart rate", "temperature fluctating", "cold", "infection", "confused", "sleepy", "tired", "fatigue", "shortness of breath", "difficult to awake", "discomfort", "severe pain"],
+         "responses": ["What other symptoms are you experiencing?"],
+         "context_set": ""
+        },
+        {"tag": "sepsis_2",
+         "patterns": ["Yes I am experiencing other symptoms", "Yes I am facing fever, increased heart rate, and temperature fluctating", "Yes I am facing cold, infection, and confusion", "Yes I am experiencing tiredness, sleepiness, fatigue", "Yes I have shortness of breath, difficult to awake, discomfort, and severe pain"],
+         "responses": ["It is possible that you currently suffering from sepsis.", "Would you like more information on sepsis?"],
+         "context_set": ""
+        },
+        {"tag": "sepsis_3",
+         "patterns": ["more information on sepsis", "details about sepsis", "what is sepsis"],
+         "responses": ["It occurs when your immune system stops making an effort to fight an infection and turns on itself. It is a life-threatening condition and requires immediate medical response. For more information visit sepsis.org"],
+         "context_set": ""
+        },
 
+        {"tag": "no_sepsis",
+         "patterns": ["No I don't have these symptoms", "I only have one symptom", "I only have two of these symptoms", "I only have increased heart rate, cold, and fatigue"],
+         "responses": ["You most likely are not experiencing sepsis, is there anything else I can help you with?"],
+         "context_set": ""
+        },
+        {"tag": "sepsis_risk_groups",
+         "patterns": ["highest risk groups", "high risk demographics"],
+         "responses": ["If you are an infant or a senior, have serious or chronic illnesses, or a weakened immune system, then you are at higher risk of sepsis. For more information visit sepsis.org."],
+         "context_set": ""
+        },
+        
    ]
 }
